@@ -5,6 +5,8 @@ import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 import AstroIcon from "./icons/Astro.astro"
+import React from "./icons/React.astro"
+import Electron from "./icons/Electron.astro"
 
 const TAGS = {
     NEXT: {
@@ -22,6 +24,16 @@ const TAGS = {
         class: "bg-[#45157f] text-white",
         icon: AstroIcon,
     },
+    REACT: {
+        name: "React",
+        class: "bg-[#003159] text-white",
+        icon: React
+    },
+    ELECTRON: {
+        name: "Electron",
+        class: "bg-[#2F3242] text-white",
+        icon: Electron
+    }
 }
 const PROJECTS = [
     // {
@@ -55,6 +67,13 @@ const PROJECTS = [
         description: "Temporizador Pomodoro simple y gratuito para mejorar tu productividad. Personaliza ciclos de trabajo, descansos automáticos y consulta estadísticas.",
         link: "https://0c2d2e85.pomodoro-app-ee6.pages.dev/",
         tags: [TAGS.TAILWIND]
+    },
+    {
+        title: "Reqly",
+        image: "https://raw.githubusercontent.com/Damet24/Reqly/refs/heads/main/.github/screenshot.png",
+        description: "A modern desktop HTTP client built with Electron + React + Vite that allows you to create, organize, and execute HTTP requests with full environment support.",
+        link: "https://github.com/Damet24/Reqly",
+        tags: [TAGS.REACT, TAGS.ELECTRON]
     }
 ]
 ---
